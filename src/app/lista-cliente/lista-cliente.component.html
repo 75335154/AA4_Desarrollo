@@ -1,0 +1,41 @@
+<table class="table table-striped">
+    <thead class=" table-dark">
+        <tr>
+            <th>ID Numero</th>
+            <th>Nombres</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Correo</th>
+            <th>Password</th>
+            <th>DNI</th>
+            <th>Fecha registro</th>
+            <th>Num. Celular</th>
+            <th>Departamento</th>
+            <th>Provincia</th>
+            <th>Distrito</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let identificador of listaCliente">
+            <td>{{identificador.idregistrowilson}}</td>
+            <td>{{identificador.nombregistrowilson}}</td>
+            <td>{{identificador.apepatregistrowilson}}</td>
+            <td>{{identificador.apematregistrowilson}}</td>
+            <td>{{identificador.correoregistrowilson}}</td>
+            <td>{{identificador.paswregistrowilson}}</td>
+            <td>{{identificador.dniregistrowilson}}</td>
+            <td>{{identificador.fechnacregistrowilson}}</td>
+            <td>{{identificador.celregistrowilson}}</td>
+            <td>{{identificador.depregistrowilson}}</td>
+            <td>{{identificador.provregistrowilson}}</td>
+            <td>{{identificador.disregistrowilson}}</td>
+            <td>{{identificador.estadoregistrowilson}}</td>
+            <td>
+                <button (click)="actualizarCliente(identificador.idregistrowilson)" class="btn btn-info">Modificar</button>
+                <button (click)="eliminarCliente(identificador.idregistrowilson)" class="btn btn-danger" style="margin-top: 10px;">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
