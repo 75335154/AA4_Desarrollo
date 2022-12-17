@@ -1,0 +1,45 @@
+
+
+.contenedor{
+    display: block;
+    padding-top: 2rem;
+    background-color: #ffff;    
+    
+       
+    
+    
+    
+}
+
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+button{
+    margin-bottom: 2rem;
+}
+
+.imagen{
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+
+/*Registro*/
+
+.registro{
+    display: block;
+    width: 60%;
+    
+}
+
+.color-letra{
+    color: rgb(15, 72, 194);
+}
+
